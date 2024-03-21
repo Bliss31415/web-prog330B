@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="style.css">
+<title>Calculator</title>
+<meta name="generator" content="Geany 1.38" />
+</head>
+
+<body>
+	<div class="Calculator">
+		<div class="display">
+			<div id="output">0</div>
+			<input type="text" id="num1" onpaste="return false"; oninput="handleInput_one()" placeholder="Введите первое число" onkeypress="return ban_words(event)"/>
+			<input type="text" id="num2" onpaste="return false"; oninput="handleInput_two()" placeholder="Введите первое число" onkeypress="return ban_words(event)"/>
+			<label for="oper">Выберите операцию</label>
+			<select id="operation">
+				<option value="addition">Сложение</option>
+				<option value="subtraction">Вычитание</option>
+				<option value="multiplication">Произведение</option>
+				<option value="division">Деление</option>
+				<option value="stepen">Степень</option>
+				<option value="ostatok">Остаток</option>
+			</select>
+			<button id="calc_Btn" onclick="performOperations()">Выполнить операцию</button>
+		</div>
+
+
+	</div>
+
+
+	<script src="./main.js"></script>
+
+</body>
+
+</html>
+

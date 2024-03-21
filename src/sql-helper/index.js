@@ -3,7 +3,7 @@ var a = document.getElementById("btn");
 function getInfo() {
     $.ajax({
         type: "POST",
-        url: "index.html",
+        url: "index.php",
         data: {
             get_info: 'get_info'
         },
@@ -12,9 +12,3 @@ function getInfo() {
     });
 
 }
-
-a.addEventListener("click", () => {
-    getInfo();
-
-    //console.log("HUI");
-})

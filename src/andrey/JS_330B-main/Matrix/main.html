@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Матрица</title>
+</head>
+<body>
+    <div class="Tablematrix">
+        <table id="matrixTable">
+            <thead>
+                <tr>
+                    <th colspan="9">Матрица</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            </tbody>
+       </table>
+    </div>
+
+    <div class="inputNumber">
+        <input type="number" id="rowCount" min="1" max="9" value="1" placeholder="Введите количество строк">
+        <input type="number" id="colCount" min="1" max="9" value="1" placeholder="Введите количество столбцев">
+    </div>
+    <div class="buttonselecter">
+        <button id="createMatrixTabl" onclick="createMatrixTable()">Создать матрицу</button>
+        <button id="randomMatrix" onclick="randomMatrix()">Заполнить случайными значениями</button>
+        <button id="zeroMatrix" onclick="zeroMatrix()">Обнулить матрицу</button>
+        <button id="rotateMatrixClockwise" onclick="rotateMatrixClockwise()">Повернуть по часовой</button>
+        <button id="rotateMatrixCounterClockwise" onclick="rotateMatrixCounterClockwise()">Повернуть против часовой</button>
+        <button id="mirrorMatrixVertical" onclick="mirrorMatrixVertical()">Отзеркалить по горизонтали</button>
+        <button id="mirrorMatrixHorizontal" onclick="mirrorMatrixHorizontal()">Отзеркалить по вертикали</button>
+        <button id ="matrixTranspose" onclick="matrixTranspose()">Транспонирование матрицы</button>
+        <button id="calculateDeterminant" onclick="calculateDeterminant()">Определитель матрицы</button>
+    </div>
+    <p id="determinant"></p>
+    <script src="main.js"></script>
+</body>
+</html> 

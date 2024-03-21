@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="style.css">
+<title>Стилизация блока</title>
+<meta name="generator" content="Geany 1.38" />
+</head>
+
+<body>
+    <div class="main">
+        <input id="width" type="number" placeholder="Введите ширину">
+        <input id="height" type="number" placeholder="Введите высоту">
+        <input id="color" type="color" placeholder="Введите цвет">
+        <input id="image" type="text" placeholder="Введите ссылку">
+        <input id="borderWidth" type="text" placeholder="Введите ширину границы">
+        <input id="borderColor" type="color" placeholder="Введите цвет границы">
+        <select id="borderStyle">
+            <option value="solid">Сплошная</option>
+            <option value="dotted">Точечная</option>
+            <option value="dashed">Штриховая</option>
+            <option value="double">Двойная</option>
+            <option value="groove">Groove</option>
+            <option value="ridge">Ridge</option>
+            <option value="inset">Inset</option>
+            <option value="outset">outset</option>
+        </select>
+        <input type="checkbox" id="borderEnabled" class="borderEnabled">
+         <div class="change-shadow">
+			<input id="xOffset" type="number" placeholder="X - смещение">
+			<input id="yOffset" type="number" placeholder="Y - смещение" >
+			<input id="blur" type="number" placeholder="Размытие" >
+			<input id="shadowColor" type="color" placeholder="Цвет тени">
+        </div>
+        <input id="text" type="text" placeholder="Введите текст">
+        <div class="selecter">
+			<select id="position">
+            <option value="top-left">Сверху слева</option>
+            <option value="top-center">Сверху посередине</option>
+            <option value="top-right">Сверху справа</option>
+            <option value="center-left">По центру слева</option>
+            <option value="center">По центру</option>
+            <option value="center-right">По центру справа</option>
+            <option value="bottom-left">Снизу слева</option>
+            <option value="bottom-center">Снизу посередине</option>
+            <option value="bottom-right">Снизу справа</option>
+        </select>
+        </div>
+        <input id="repetitions" type="number" placeholder="Введите количество повторений">
+        <div class="anime">
+            <select id="animations">
+                <option value="none">Без анимации</option>
+                <option value="fade-in">Появление</option>
+                <option value="slide-in">Скольжение</option>
+                <option value="pulse">Пульсация текста</option>
+            </select>
+        </div>
+        <div class = "button-counteiner">
+			<button onclick="allAccept()">Применить</button>
+			 <button onclick="clearText()">Очистить</button>
+		</div>
+    </div>
+
+    <div class="place">
+		<div id="block" class="block">
+			<p id="textblock"></p>
+		</div>
+	</div>
+
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

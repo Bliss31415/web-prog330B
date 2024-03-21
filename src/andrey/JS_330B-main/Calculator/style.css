@@ -1,0 +1,32 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-shadow: border-box;
+}
+body{
+ background: linear-gradient(to right, #f12711, #f5af19);
+ font-size:12px;
+ font-family: Ariel;
+}
+
+.calculator{
+	width: 470px;
+	height: auto;
+	background-color: black;
+	margin: 150px auto;
+	border-radius: 50px;
+}
+
+.display{
+	width: 400px;
+	height: 250px;
+	margin: auto;
+	transform: translate(0%, 70%);
+	background-color: #556B2F;
+  	font-size: 25px;
+  	border: solid;
+  	padding-top: 20px;
+
+.lable{
+	font-size: 20px;
+}

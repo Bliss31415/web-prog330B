@@ -1,0 +1,19 @@
+body{
+    background-color: antiquewhite;
+}
+#btn{
+    width: 100px;
+    height: 40px;
+    margin: auto;
+    display: block;
+    margin-top: 10%;
+} 
+#out_info {
+    height: 300px;
+    width: 100%;
+    background-color: antiquewhite;
+    margin-left: 50%;
+    text-align: center;
+    position: relative;
+    transform: translateX(-50%);
+}

@@ -1,0 +1,101 @@
+
+body {
+    background-color: #ebb5b5;
+    display: flex;
+}
+
+input{
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+label{
+    position: absolute;
+    margin-left: 10px;
+}
+.block {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    margin-top: 15%;
+    margin-left: 10%;
+    overflow: clip;
+
+}
+.block p {
+        
+    display: flex;
+    overflow-wrap: anywhere;
+    margin: 0;
+    font-size: 16px;
+     font-weight: bold;
+}
+
+.place {
+    flex: 1;
+    background-color: #ebb5b5;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main {
+    position: absolute;
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgb(100, 148, 219);
+    width: 200px;
+    margin-left: -10px;
+    margin-top: -8px;
+    height: 150vh;
+}
+.button-counteiner{
+    display:flex;
+    margin-left:10px;
+    margin-top: 20px;
+}
+.selecter{
+	position:flex;
+	margin-left:10px;
+}
+.change-shadow input{
+ margin-bottom: 1px;
+}
+.borderEnabled{
+	position:absolute;
+	margin-left:-170px;
+	margin-top:-6px;
+}
+.anime{
+    display: flex;
+    margin-left: 10px;
+}
+
+@keyframes fadeAnimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes slideAnimation {
+    from {transform: translateY(100%);}
+    to { transform: translateY(0); }
+}
+
+@keyframes pulseAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.fade-in {
+    animation: fadeAnimation 1s forwards;
+  }
+  
+.slide-in {
+    animation: slideAnimation 1s forwards;
+}
+.pulse {
+    animation: pulseAnimation 1s infinite;
+}
