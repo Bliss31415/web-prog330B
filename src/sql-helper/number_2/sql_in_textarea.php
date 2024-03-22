@@ -13,20 +13,12 @@ if (!$connect){
 }
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-    $login = $_POST['login'];
-    $pASSword = $_POST['password'];
+    $query = $_POST['query'];
 
-    if (($login == 'admin') && ($pASSword == 'password')){
-        $_SESSION['user_id'] = 1;
-        header('Location: sukili_help.php');
-        exit;
-    }
-    else {
-        echo'Wrong login or pASSword';
-    }
+    $res = array();
+    echo json_encode($res);
 
 }
-
 
 ?>
 
@@ -34,21 +26,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-    <title>СУКИЛИ</title>
+    <title>СУКИЛИ ХЭЛП</title>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <meta name="generator" content="Geany 2.0" />
 </head>
 
 <body>
-    <form method = "POST">
-        <label for = "login">login:</label>
-        <input id = "login" name = "login" type="text" required><br>
+    <script src = "num_2.js"></script>
 
-        <label for="password">pASSword:</label>
-        <input id="password" name="password" type="password" required><br>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/ajax/dist/ajax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-        <button type="submit">Enter</button>
-    </form>
     
 </body>
 
